@@ -244,10 +244,10 @@ hey-rosario/
 ## 👥 Team
 
 **Project Lead & Frontend Developer & Documentation Lead:** Casey
-**Backend Developer:** [Name]
+**Backend Developer:** Prince
 **Database Administrator:** Ayenne
-**UI/UX Designer:** [Name]
-**QA Tester:** [Name]
+**UI/UX Designer:** Abygale
+
 
 ## 📄 License
 
