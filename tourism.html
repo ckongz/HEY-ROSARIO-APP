@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Guide | Hey Rosario!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <section class="page-hero" style="background: linear-gradient(135deg, #fe5448, #fc6d54); padding: 80px 0;">
+        <div class="container" style="text-align: center; color: white;">
+            <h1>Discover Sto. Rosario</h1>
+            <p>Explore our heritage, food, and local businesses</p>
+        </div>
+    </section>
+
+    <section style="padding: 64px 0;">
+        <div class="container">
+            <div class="category-tabs" style="display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap;">
+                <button class="btn btn-primary active" data-category="all">All</button>
+                <button class="btn btn-outline" data-category="attractions">Attractions</button>
+                <button class="btn btn-outline" data-category="food">Food</button>
+                <button class="btn btn-outline" data-category="business">Businesses</button>
+            </div>
+
+            <div class="tourism-grid">
+                <div class="tourism-card" data-category="attractions">
+                    <img src="images/san-agustin-chapel-exterior.jpg" alt="San Agustin Chapel">
+                    <div class="tourism-content">
+                        <h3>San Agustin Chapel</h3>
+                        <p class="tourism-category"><i class="fas fa-map-marker-alt"></i> Historical Site</p>
+                        <p>Historic Spanish-era chapel and cultural heritage landmark.</p>
+                    </div>
+                </div>
+
+                <div class="tourism-card" data-category="food">
+                    <img src="images/lugaw-goto.jpg" alt="Lugaw">
+                    <div class="tourism-content">
+                        <h3>Nanay Ising's Lugawan</h3>
+                        <p class="tourism-category"><i class="fas fa-utensils"></i> Local Food</p>
+                        <p>Famous authentic lugaw and goto, a local breakfast favorite.</p>
+                    </div>
+                </div>
+
+                <div class="tourism-card" data-category="attractions">
+                    <img src="images/heritage-house-exterior.jpg" alt="Heritage House">
+                    <div class="tourism-content">
+                        <h3>Don Pablo Santos House</h3>
+                        <p class="tourism-category"><i class="fas fa-landmark"></i> Heritage Site</p>
+                        <p>Preserved ancestral home with traditional Filipino architecture.</p>
+                    </div>
+                </div>
+
+                <div class="tourism-card" data-category="business">
+                    <img src="images/handicrafts-shop.jpg" alt="Handicrafts">
+                    <div class="tourism-content">
+                        <h3>Rosario Handicrafts</h3>
+                        <p class="tourism-category"><i class="fas fa-store"></i> Local Business</p>
+                        <p>Handmade crafts and souvenirs by local artisans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

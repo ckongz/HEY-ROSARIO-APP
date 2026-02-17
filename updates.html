@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Updates | Hey Rosario!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <section class="page-hero" style="background: linear-gradient(135deg, #ca52cc, #ee7ea2); padding: 80px 0;">
+        <div class="container" style="text-align: center; color: white;">
+            <h1>Community Updates & Announcements</h1>
+            <p>Stay informed with the latest news and alerts</p>
+        </div>
+    </section>
+
+    <section style="padding: 64px 0;">
+        <div class="container">
+            <div style="margin-bottom: 32px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+                <input type="text" id="announcementSearch" placeholder="Search announcements..." style="flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 6px;">
+                <div class="category-filters">
+                    <button class="category-filter active btn btn-secondary" data-category="all">All</button>
+                    <button class="category-filter btn btn-secondary" data-category="general">General</button>
+                    <button class="category-filter btn btn-secondary" data-category="emergency">Emergency</button>
+                    <button class="category-filter btn btn-secondary" data-category="events">Events</button>
+                </div>
+            </div>
+            
+            <div class="announcements-grid" id="allAnnouncements">
+                <!-- Announcements will load here via JavaScript/PHP -->
+                <div class="announcement-card" data-category="general">
+                    <div class="announcement-badge" style="background: #ca52cc;">General</div>
+                    <h3>Community Clean-Up Drive</h3>
+                    <p class="announcement-date"><i class="far fa-calendar"></i> February 15, 2026</p>
+                    <p>Join us this Saturday for our monthly community clean-up drive. Meeting point at Barangay Hall, 7:00 AM.</p>
+                </div>
+                
+                <div class="announcement-card" data-category="emergency">
+                    <div class="announcement-badge" style="background: #4069c2;">Emergency</div>
+                    <h3>Road Closure Advisory</h3>
+                    <p class="announcement-date"><i class="far fa-calendar"></i> February 14, 2026</p>
+                    <p>Main Street will be closed for repairs from February 20-22. Please use alternative routes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/filter-search.js"></script>
+</body>
+</html>
